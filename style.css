@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffefba,#ffffff);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+    text-align:center;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+h1{
+    color:#ff7b00;
+    margin-bottom:15px;
+}
+
+.mantra{
+    background:#fff8e8;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:20px;
+    line-height:1.6;
+    font-weight:bold;
+}
+
+.counter-box{
+    font-size:60px;
+    font-weight:bold;
+    color:#ff5e00;
+    margin:20px 0;
+}
+
+#japBtn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:#ff7b00;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#japBtn:hover{
+    transform:scale(1.05);
+}
+
+.progress-section{
+    margin-top:20px;
+}
+
+.progress-bar{
+    width:100%;
+    height:20px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:8px;
+}
+
+#progress{
+    width:0%;
+    height:100%;
+    background:linear-gradient(to right,#ff7b00,#ffb347);
+    transition:0.4s;
+}
+
+.streak{
+    margin-top:15px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#achievement{
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+#resetBtn{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:50px;
+    background:#e53935;
+    color:white;
+    cursor:pointer;
+}
+
+.animate{
+    animation:pop 0.3s ease;
+}
+
+@keyframes pop{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.3);}
+    100%{transform:scale(1);}
+}
+
+@media(max-width:480px){
+    .counter-box{
+        font-size:50px;
+    }
+}
